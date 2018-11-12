@@ -20,29 +20,40 @@ public class QuestionsActivity extends AppCompatActivity {
     RadioButton rb1, rb2, rb3, rb4;
 
     String questions[] = {
-            "Quem é o pricipal?",
-            "Which of these is not a bitwise operator?",
-            "Which keyword is used by method to refer to the object that invoked it?",
-            "Which of these keywords is used to define interfaces in Java?",
-            "Which of these access specifiers can be used for an interface?",
-            "Which of the following is correct way of importing an entire package ‘pkg’?",
-            "What is the return type of Constructors?",
-            "Which of the following package stores all the standard java classes?",
-            "Which of these method of class String is used to compare two String objects for their equality?",
-            "An expression involving byte, int, & literal numbers is promoted to which of these?"
+            "Qual a serie que tem crianças como personagens principais?",
+            "Qual o filme Original Netflix sobre alienigenas Will Smith atuou?",
+            "Qual o nome da serie que se passa em uma prisão feminina?",
+            "Qual serie abaixo não é original netflix?",
+            "Qual o nome da serie brasileira original netflix?",
+            "Qual das seguintes é uma serie de animação?",
+            "Qual o nome do protagonista de Breaking Bad?",
+            "Qual serie abaixo não está no Netflix?",
+            "Qual a serie de maior sucesso original netflix?",
+            "Qual ano o netflix foi fundado?"
     };
-    String answers[] = {"main method", "<=", "this", "interface", "public", "import pkg.*", "None of the mentioned", "java", "equals()", "int"};
+    String answers[] = {
+            "Stranger Things",
+            "Bright",
+            "Orange is The New Black",
+            "Gossip Girl",
+            "3%",
+            "Gravity Falls",
+            "Walter White",
+            "Game of Thrones",
+            "1997",
+            "Lost"
+    };
     String opt[] = {
-            "eu", "tu", "ele", "ghrghfhfhfhf method",
-            "&", "&=", "|=", "<=",
-            "import", "this", "catch", "abstract",
-            "Interface", "interface", "intf", "Intf",
-            "public", "protected", "private", "All of the mentioned",
-            "Import pkg.", "import pkg.*", "Import pkg.*", "import pkg.",
-            "int", "float", "void", "None of the mentioned",
-            "lang", "java", "util", "java.packages",
-            "equals()", "Equals()", "isequal()", "Isequal()",
-            "int", "long", "byte", "float"
+            "Friends", "Elite", "Stranger Things", "La Casa de Papel",
+            "Depois da Terra", "MIB", "Uma noite de crime", "Bright",
+            "Orange is The New Black", "La Casa de Papel", "Dark", "Friends",
+            "La casa de papel", "Orange is the New Black", "Stranger Things", "Gossip Girl",
+            "3%", "Demolidor", "Narcos", "Os Defensores",
+            "Gravity Falls", "Monstros SA", "Divertidamente", "Os incriveis",
+            "Walter White", "Valter Branco", "Bryan White", "White Walter",
+            "Vikings", "Samantha", "Lost", "Game of Thrones",
+            "La Casa de Papel", "Lost", "Vikings", "Friends",
+            "1997", "2001", "2004","2008"
     };
     int flag = 0;
     public static int marks = 0, correct = 0, wrong = 0;
@@ -58,9 +69,9 @@ public class QuestionsActivity extends AppCompatActivity {
         String name = intent.getStringExtra("myname");
 
         if (name.trim().equals(""))
-            textView.setText("Hello User");
+            textView.setText("Ola caro jogador");
         else
-            textView.setText("Hello " + name);
+            textView.setText("Seja Bem-vindo " + name);
 
         submitbutton = (Button) findViewById(R.id.button3);
         quitbutton = (Button) findViewById(R.id.buttonquit);
