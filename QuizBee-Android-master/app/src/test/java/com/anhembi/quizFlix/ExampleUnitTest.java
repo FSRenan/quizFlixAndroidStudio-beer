@@ -1,4 +1,4 @@
-package com.example.vikasojha.quizbee;
+package com.anhembi.quizFlix;
 
 import org.junit.Test;
 
